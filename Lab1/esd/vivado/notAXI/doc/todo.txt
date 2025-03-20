@@ -1,0 +1,27 @@
+baseline blink
+copy to notAXI
+baseline notAXI
+open notAXI
+create negation vhdl from blink ip in new directory
+create new IP in IP integrator
+synth negation IP core
+create negation IP core
+add negation IP core to project
+add axi IP
+edit in IP integrator
+add user in and out ports
+place axi IP
+delete constraint
+connect all blocks together
+save
+close
+set compile flag to 1
+run
+copy system.bit.bin to board
+chmod -777 system.bit.bin
+echo 0 > /sys/class/fpga_manager/fpga0/flags
+cp system.bit.bin /lib/firmware
+echo system.bit.bin > /sys/class/fpga_manager/fpga0/firmware
+./rwmem.elf 0x43c00000
+./rwmem.elf 0x43c00000 1
+./rwmem.elf 0x43c00004
