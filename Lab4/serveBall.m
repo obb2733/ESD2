@@ -25,7 +25,7 @@ for counter = 3:0.5:5
     image = blenderLink(client,width,height,7.25,8.25,0.65,90,0,90,"Camera");
     image2 = blenderLink(client,width,height,7.25,8.85,0.65,90,0,90,"Camera");
     %imagesc(image)
-    %imagesc(image2)
+    imagesc(image2)
     ballPOS(:,i) = [8-counter 8.55 0.55];
     image1Array(:,:,:,i) = image;
     image2Array(:,:,:,i) = image2;
