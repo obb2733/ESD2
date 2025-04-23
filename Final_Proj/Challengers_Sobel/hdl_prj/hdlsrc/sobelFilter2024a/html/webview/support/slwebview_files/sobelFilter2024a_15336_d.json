@@ -82,48 +82,24 @@
   "sid":"sobelFilter2024a:15336:1698",
   "inspector":{
    "params":[
-    "PropDataTypeMode",
-    "PropDataType",
-    "IfRefDouble",
-    "IfRefSingle",
-    "IsSigned",
-    "NumBitsBase",
-    "NumBitsMult",
-    "NumBitsAdd",
-    "NumBitsAllowFinal",
-    "PropScalingMode",
-    "PropScaling",
-    "ValuesUsedBestPrec",
-    "SlopeBase",
-    "SlopeMult",
-    "SlopeAdd",
-    "BiasBase",
-    "BiasMult",
-    "BiasAdd"
+    "SourceBlock",
+    "SourceType",
+    "SourceProductBaseCode",
+    "SourceProductName"
    ],
    "values":[
-    "Inherit via propagation rule",
-    "fixdt(1, 16)",
-    "double",
-    "single",
-    "FALSE",
-    "NumBits1",
-    "1",
-    "0",
-    "1:128",
-    "Specify via dialog",
-    "1",
-    "[5 -7]",
-    "Slope1",
-    "0",
-    "1",
-    "Bias1",
-    "0",
-    "0"
+    "simulink/Signal\nAttributes/Data Type\nPropagation",
+    "Data Type Propagation",
+    "",
+    ""
    ],
    "tabs":[
+    "Parameter Attributes",
+    "-Other"
    ],
    "tabs_idx":[
+    0,
+    2
    ]
   },
   "viewer":{
@@ -132,28 +108,32 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"S-Function",
-   "masktype":"Data Type Propagation"
+   "blocktype":"Reference",
+   "masktype":""
   }
  },
  {
   "sid":"sobelFilter2024a:15336:1703",
   "inspector":{
    "params":[
-    "bitsToExtract",
-    "numBits",
-    "bitIdxRange",
-    "outScalingMode"
+    "SourceBlock",
+    "SourceType",
+    "SourceProductBaseCode",
+    "SourceProductName"
    ],
    "values":[
-    "Range of bits",
-    "8",
-    "[ridx lidx]",
-    "Treat bit field as an integer"
+    "simulink/Logic and Bit\nOperations/Extract Bits",
+    "Extract Bits",
+    "",
+    ""
    ],
    "tabs":[
+    "Parameter Attributes",
+    "-Other"
    ],
    "tabs_idx":[
+    0,
+    2
    ]
   },
   "viewer":{
@@ -162,8 +142,8 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"SubSystem",
-   "masktype":"Extract Bits"
+   "blocktype":"Reference",
+   "masktype":""
   }
  },
  {

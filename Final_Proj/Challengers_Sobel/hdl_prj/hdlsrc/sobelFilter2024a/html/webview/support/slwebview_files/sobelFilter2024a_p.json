@@ -1336,36 +1336,6 @@
   }
  },
  {
-  "sid":"sobelFilter2024a:15336:1703",
-  "inspector":{
-   "params":[
-    "bitsToExtract",
-    "numBits",
-    "bitIdxRange",
-    "outScalingMode"
-   ],
-   "values":[
-    "Range of bits",
-    "8",
-    "[ridx lidx]",
-    "Treat bit field as an integer"
-   ],
-   "tabs":[
-   ],
-   "tabs_idx":[
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":{
-   "blocktype":"SubSystem",
-   "masktype":"Extract Bits"
-  }
- },
- {
   "sid":"sobelFilter2024a:15366",
   "inspector":{
    "params":[
